@@ -159,7 +159,7 @@ class ItemInfoScreen extends StatelessWidget {
       floatingActionButton: Padding(
         padding: EdgeInsets.symmetric(horizontal: 12.h),
         child: CustomElevatedButton(
-          text: 'Delete transport',
+          text: 'Remove',
           onPressed: () async {
             await DataManager.removeItemFromList(itemModel);
             NavigatorService.pushNamedAndRemoveUntil(AppRoutes.mainScreen);
